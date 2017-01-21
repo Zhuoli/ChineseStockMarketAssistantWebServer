@@ -3,7 +3,7 @@ package chinesestockassistancewebserver
 class CompanyController {
 
     def index() {
-        def companies = Company.list()
+        def companies = Company.findAll()
         [companyList : companies]
     }
 }

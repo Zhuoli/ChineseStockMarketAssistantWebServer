@@ -7,18 +7,19 @@
 <body>
 <table border="1">
       <tr>
-        <th>Symbol</th>
-        <th>Shares</th>
-    <th>Current price</th>
-        <th>Earning Report Date</th>
-        <th>Average Cost</th>
+        <th>股票代码</th>
+        <th>公司名称</th>
+        <th>市盈率</th>
+        <th>市净率</th>
+        <th>当前价格</th>
       </tr>
     <g:each in="${companyList}" var="viewShare">
         <tr>
-            <g:set var="symbol" value="${fieldValue(bean:"${viewShare}", field:"symbol")}"/>
-            <td><a href="http://finance.sina.com.cn/realstock/company/"><g:fieldValue bean="${viewShare}/nc.shtml" field="stockid"/></a></td>
             <td><g:fieldValue bean="${viewShare}" field="stockid"/></td>
             <td><g:fieldValue bean="${viewShare}" field="companyname"/></td>
+            <td><g:fieldValue bean="${viewShare}" field="per"/></td>
+            <td><g:fieldValue bean="${viewShare}" field="pbr"/></td>
+            <td><g:fieldValue bean="${viewShare}" field="currentprice"/></td>
         </tr>
     </g:each>
 </table>

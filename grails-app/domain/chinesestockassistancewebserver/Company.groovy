@@ -4,24 +4,24 @@ class Company {
 
     String stockid
     String companyname
-    double currentprice
+    Double currentprice
     Date currentpricetimestamp
-    double openprice
-    double closeprice
-    double marketcap
-    double capitalizationvalue
-    double tradingvolume
-    double tradingvalue
-    double oscillation
-    double turnoverrate
-    int pbr
-    int per
+    Double openprice
+    Double closeprice
+    Double marketcap
+    Double capitalizationvalue
+    Double tradingvolume
+    Double tradingvalue
+    Double oscillation
+    Double turnoverrate
+    Integer pbr // 市净率 Price-to-book ratio
+    Integer per // 市盈率
     Date lastUpdateDateTime
 
     static constraints = {
         stockid blank: false, nullable: false, comment: "股票ID"
         companyname blank: false, nullable: false, comment: "公司名称"
-        currentprice blank: false, nullable: true, default: 0, comment: "Current Price"
+        currentprice blank: false, nullable: true, comment: "Current Price"
         currentpricetimestamp blank: false, nullable: false
         openprice blank:false, nullable:true, comment: "开盘价"
         closeprice blank:false, nullable:true, comment: "昨日收盘价"

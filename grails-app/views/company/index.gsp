@@ -20,7 +20,7 @@
     <body>
     <div  data-role="main" class="ui-content">
         <form>
-            <input id="filterTable-input" data-type="search" placeholder="Search For Customers...">
+            <input id="filterTable-input" data-type="search" placeholder="Search...">
         </form>
         <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable" data-filter="true" data-input="#filterTable-input">
             <tr>

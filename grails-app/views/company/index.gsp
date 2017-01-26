@@ -23,13 +23,16 @@
             <input id="filterTable-input" data-type="search" placeholder="Search...">
         </form>
         <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable" data-filter="true" data-input="#filterTable-input">
-            <tr>
+            <thead>
+            <tr>
                 <th data-priority="6">股票代码</th>
                 <th data-priority="1">公司名称</th>
                 <th data-priority="2">市盈率</th>
                 <th data-priority="3">市净率</th>
                 <th data-priority="4">当前价格</th>
              </tr>
+            </thead>
+            <tbody>
             <g:each in="${companyList}" var="viewShare">
                 <tr>
                     <td class="name"><g:fieldValue bean="${viewShare}" field="stockid"/></td>
@@ -39,6 +42,7 @@
                     <td><g:fieldValue bean="${viewShare}" field="currentprice"/></td>
                 </tr>
             </g:each>
+            </tbody>
         </table>
         </div>
     </body>

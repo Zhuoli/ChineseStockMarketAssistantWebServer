@@ -25,21 +25,23 @@
         <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable" data-filter="true" data-input="#filterTable-input">
             <thead>
             <tr>
-                <th data-priority="6">股票代码</th>
+                <th data-priority="2">股票代码</th>
                 <th data-priority="1">公司名称</th>
-                <th data-priority="2">市盈率</th>
-                <th data-priority="3">市净率</th>
-                <th data-priority="4">当前价格</th>
+                <th data-priority="3">市盈率</th>
+                <th data-priority="4">市净率</th>
+                <th data-priority="5">当前价格</th>
+                <th>上次跟新时间</th>
              </tr>
             </thead>
             <tbody>
             <g:each in="${companyList}" var="viewShare">
                 <tr>
-                    <td class="name"><g:fieldValue bean="${viewShare}" field="stockid"/></td>
-                    <td class="city"><g:fieldValue bean="${viewShare}" field="companyname"/></td>
-                    <td><g:fieldValue bean="${viewShare}" field="per"/></td>
-                    <td><g:fieldValue bean="${viewShare}" field="pbr"/></td>
-                    <td><g:fieldValue bean="${viewShare}" field="currentprice"/></td>
+                    <td><g:link url="http://finance.sina.com.cn/realstock/company/${viewShare.stockid}/nc.shtml">${viewShare.stockid}</g:link></td>
+                    <td>${viewShare.companyname}</td>
+                    <td>${viewShare.per}</td>
+                    <td>${viewShare.pbr}</td>
+                    <td>${viewShare.currentprice}</td>
+                    <td>${viewShare.currentpricetimestamp}</td>
                 </tr>
             </g:each>
             </tbody>

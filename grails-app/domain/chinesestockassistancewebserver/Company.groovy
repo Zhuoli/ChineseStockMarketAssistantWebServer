@@ -1,5 +1,8 @@
 package chinesestockassistancewebserver
 
+import grails.rest.Resource
+
+@Resource(uri='/Company')
 class Company {
 
     String stockid

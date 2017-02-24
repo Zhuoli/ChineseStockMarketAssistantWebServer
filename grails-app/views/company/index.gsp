@@ -48,7 +48,7 @@
                     <td>${viewShare.per}</td>
                     <td>${viewShare.pbr}</td>
                     <td>${viewShare.currentprice}</td>
-                    <td><g:formatDate timeZone="Asian/Shanghai" format="yyyy-MM-dd HH:mm ZZZ" date= "${viewShare.currentpricetimestamp}"/></td>
+                    <td><g:formatDate timeZone="Asia/Shanghai" format="yyyy-MM-dd HH:mm ZZZ" date= "${viewShare.currentpricetimestamp}"/></td>
                 </tr>
             </g:each>
             </tbody>

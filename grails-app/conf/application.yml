@@ -96,19 +96,19 @@ environments:
     development:
         dataSource:
             dbCreate: update #create
-            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/ChineseStock?useUnicode=yes&characterEncoding=UTF-8
+            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/StockMarket?useUnicode=yes&characterEncoding=UTF-8
             username: zhuoli
             password: cp8482617
     test:
         dataSource:
             dbCreate: update #create-drop
-            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/ChineseStock?useUnicode=yes&characterEncoding=UTF-8
+            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/StockMarket?useUnicode=yes&characterEncoding=UTF-8
             username: zhuoli
             password: cp8482617
     production:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/ChineseStock?useUnicode=yes&characterEncoding=UTF-8
+            url: jdbc:mysql://earningmanagement.cqxahokpf4dx.us-west-2.rds.amazonaws.com:3306/StockMarket?useUnicode=yes&characterEncoding=UTF-8
             username: zhuoli
             password: cp8482617
             properties:

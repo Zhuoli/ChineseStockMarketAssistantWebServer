@@ -1,9 +1,9 @@
-package chinesestockassistancewebserver
+package stockassistancewebserver
 
 import grails.rest.Resource
 
-@Resource(uri='/Company')
-class Company {
+@Resource(uri='/ChineseMarketCompany')
+class ChineseMarketCompany {
 
     String stockid
     String companyname

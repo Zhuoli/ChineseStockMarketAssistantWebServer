@@ -1,4 +1,4 @@
-package chinesestockassistancewebserver
+package stockassistancewebserver
 
 class UrlMappings {
 

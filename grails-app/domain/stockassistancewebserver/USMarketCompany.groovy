@@ -1,5 +1,9 @@
 package stockassistancewebserver
 
+
+import grails.rest.Resource
+
+@Resource(uri='/USMarketCompany')
 class USMarketCompany {
 
     String stockid
